@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -15,16 +17,8 @@ body {
   padding: 2rem;
 }
 
-h1{
+h1 {
   margin: 2rem;
-}
-
-.squares{
-  background-color: black;
-  border: none;
-  font-size: 5rem;
-  cursor: pointer;
-  outline: none;
 }
 
 .board {
@@ -37,11 +31,19 @@ h1{
   gap: 1rem;
 }
 
-.x{
-  color: red;
+.squares {
+  background: #272727;
+  border: none;
+  font-size: 5rem;
+  /* font-weight: 800; */
+  cursor: pointer;
+  outline: none;
 }
 
-.o{
+.X {
+  color: red;
+}
+.O {
   color: green;
 }
 

@@ -29,9 +29,9 @@ const Game = () => {
         setXisNext(step % 2 === 0);
     }
 
-    const renderMover = () =>
+    const renderMoves= () =>
         history.map((_step, move) => {
-            const destination = move ? "Go to move #${move}" : "Go to start";
+            const destination = move ? "Go to move ${move}" : "Go to start";
             return(
                 <li key ={move}>
                     <button onClick={() => jumpTo(move)}>{destination}</button> 
@@ -42,12 +42,12 @@ const Game = () => {
 
     return(
         <>
-        <h1>TikTakToe with Hooks in React</h1>
+        <h1>Tik Tak Toe with Hooks in React</h1>
         <Board squares={history[stepNumber]} onClick = {handleClick} />
         <div className="info-wrapper">
             <div>
                 <h3>History</h3>
-                {renderMover()}
+                {renderMoves()}
             </div>
             <h3>{winner ? "Winner: " + winner : "Next Player: " + xO}</h3>
         </div>
